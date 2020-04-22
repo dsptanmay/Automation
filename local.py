@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 import sys
-repName = "Automation"
+repName = sys.argv[1]
 driver = webdriver.Chrome()
 driver.maximize_window()
 driver.get("https://github.com/login")
@@ -23,4 +23,6 @@ time.sleep(2)
 submitButton = driver.find_element_by_xpath(
     '//*[@id="new_repository"]/div[3]/button')
 submitButton.click()
-print("Repository created with name: ", repName)
+time.sleep(3)
+driver.close()
+print("https://github.com/dsptanmay/{}.git".format(repName))
