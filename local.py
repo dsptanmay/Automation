@@ -9,10 +9,10 @@ driver.get("https://github.com/login")
 driver.implicitly_wait(3)
 
 emailButton = driver.find_element_by_xpath('//*[@id="login_field"]')
-emailButton.send_keys("dsp.tanmay@gmail.com")
+emailButton.send_keys("<Insert_Username>")
 
 passwordButton = driver.find_element_by_xpath('//*[@id="password"]')
-passwordButton.send_keys("tanmay03bookworm#")
+passwordButton.send_keys("<Insert_password>")
 
 driver.find_element_by_xpath('//*[@id="login"]/form/div[4]/input[9]').click()
 time.sleep(4)
