@@ -1,7 +1,7 @@
 @ECHO off
 SET default_path=%CD%
 set /P email="Enter your email address: "
-set /P passwd="Enter your password: "
+set /P passwd="Enter your password: "   
 SET /p gpath="Enter the path to which your projects folder is located: "
 CD /d "%gpath%"
 SET /p f1="Enter the name of the project folder: "
